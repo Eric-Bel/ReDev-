@@ -1,6 +1,6 @@
-//  Задача №19
-//Твоя задача посчитать спрятанных на заднем дворе кошек
-//  (представленных в двухмерном формате Array)
+//        Задача №19
+// Твоя задача посчитать спрятанных на заднем дворе кошек
+// (представленных в двухмерном формате Array)
 // Кошка хорошо прячутся, но их уши (''^^") хорошо видны.
 // Твоя задача реализовать функцию (countCats), которая будет считать кошек. Удачи!
 // Количество найденых кошек должны быть number. 
@@ -15,24 +15,14 @@ let cats = [
 ];
 
 function countCats(arr) {
-    for (let i = 0; i < arr.length; i++) {
-        for (let j = 0; j < arr[i].length; j++) {
-            if(arr) {
-                let regexp = /[1]/gi;
-                return arr[i][j].match(regexp)
-            }
-        }
+    if (Array.isArray(arr)) {
+        return arr
+            .flat()   // преобразовать многомерный массив в одномерный
+            .filter((item) => item == "^^") // вернуть все элементы, совпадающие с "^^"
+            .length // вернуть длину этих элементов
+    } else {
+        return 0
     }
+
 };
-
-console.log(countCats(cats));
-
-
-
-// function countCats(arr) {
-//     if (arr) {
-//         return arr
-//     } else {
-//         return 0
-//     }
-// };
+console.log(countCats(cats)); // --> 3
