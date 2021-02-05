@@ -29,7 +29,7 @@ let str1 = 'abc def ghi jkl mno pqr stu';
 String.prototype.startsWith = function (start) {
     return this.includes(start);
 };
-console.log(str.startsWith('')); // --> true
+console.log(str1.startsWith('abc def')); // --> true
 
 // __________________________________________________
 // третье удачное решение
