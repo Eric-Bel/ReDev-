@@ -7,7 +7,7 @@
 // capitalizeFirstLetter(str)
 
 function capitalizeFirstLetter(str) {
-    return str[0].toLowerCase() + str.slice(1); // извлекаем первый символ строки, преобразовываем его в нижнию строку 
+    return str[0].toLowerCase() + str.slice(1); // извлекаем первый символ строки, преобразовываем его в нижний регистр 
     // и конкатинируем с остальной частью строки
 };
 console.log(capitalizeFirstLetter('Test')); // --> 'test'
