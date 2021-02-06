@@ -10,8 +10,8 @@ function unique_letters(str) {
     for (let items of splitted)  // перебираем каждый элемент массива
         if (!nonDouble.includes(items)) { // условие "если массив nonDouble не содержит в себе 
         // элементы массива splitted"
-            nonDouble.push(items) // то добавлять эти элементы в массив nonDouble
-        }и
+            nonDouble.push(items)     //то добавлять эти элементы в массив nonDouble
+        }
     return nonDouble.join('') // сбор в строку
 };
 
