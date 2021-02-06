@@ -12,7 +12,7 @@ function unique_letters(str) {
         // элементы массива splitted"
             nonDouble.push(items)     //то добавлять эти элементы в массив nonDouble
         }
-    return nonDouble.join('') // сбор в строку
+    return nonDouble.join('')     // сбор в строку
 };
 
 console.log(unique_letters('anaconda')); // --> "ancod"
