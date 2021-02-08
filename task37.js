@@ -10,11 +10,11 @@ let arr = ["php", "php", "css", "css", "script", "script", "html", "html", "java
 
 function removeDuplicates(arr) {
     let doubleArr = arr.filter(function (item, index) {
-        return arr.indexOf(item) !== index;
+        return arr.indexOf(item) !== index; 
     })
     return doubleArr
 }
-console.log(removeDuplicates(arr));
+console.log(removeDuplicates(arr)); // --> [ 'php', 'css', 'script', 'html' ]
 
 /* function removeDuplicates1(arr) {
     let doubleArr = [];
