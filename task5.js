@@ -5,15 +5,18 @@
 // верните true, иначе верните false.
 
 function pinCode(str) {
-    if (str.length == 4) {
+    let ArrOfStr = str.split('');  // преобразование строки в массив строк
+    let ArrOfNum = ArrOfStr.map(Number); // преобразование массива строк в массив чисел
+    if (ArrOfNum.length == 4) {
         return true;
-    } else if (str.length == 6) {
+    } else if (ArrOfNum.length == 6) {
         return true;
     }
     else {
         return false
     }
 };
+
 console.log(pinCode('1234')); //true
 console.log(pinCode('123456')); //true
 console.log(pinCode('123')) //false
