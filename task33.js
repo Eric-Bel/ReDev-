@@ -5,7 +5,7 @@
 // `comparison('string', 'StRiNg')`
 
 
-let comparison = (str1, str2) => str1.toLowerCase() === str2.toLowerCase() ? true : false;   
+const comparison = (str1, str2) => str1.toLowerCase() === str2.toLowerCase() ? true : false;   
     
 console.log(comparison('string', 'StRiNg')); // true
 console.log(comparison('Javascript', 'JaVaScRiPt')); // true
